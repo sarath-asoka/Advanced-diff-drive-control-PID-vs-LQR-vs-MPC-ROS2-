@@ -50,7 +50,6 @@ if __name__ == "__main__":
             print(f"{name:6s} dt={dt}: error = {error:.2e} m")
             plt.plot(xs[:,0], xs[:,1], label=f"{name} dt={dt}")
 
-    # TODO: also plot the true circle (dense t from 0 to T), equal axis, legend
     t = np.linspace(0, T, 500)
     c = true_circle(t, 1.0, 0.5)
     plt.plot(c[0], c[1], 'k--', label='true')
